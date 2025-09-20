@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.player-runs {
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 5px 100px;
+}
+.btn-runs button{
+  margin: 3px;
+  font-size: 13px;
+}
