@@ -1,15 +1,15 @@
 import { use } from 'react';
-import Friend from "./Friend";
+import Post from "./Post";
 
 export default function Posts({postsPromise}) {
     const posts = use(postsPromise);
-    console.log(posts);
+    // console.log(posts);
     
     return(
         <div className="card">
-            <h2>All posts are here</h2>
+            <h2>All posts are here: {posts.length}</h2>
             {
-                Posts.map(friend => <Friend key={posts.id} post={post}></Friend>)
+                posts.map(post => <Post key={posts.id} post={post}></Post>)
             }
         </div>
     );

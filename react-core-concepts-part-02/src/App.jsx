@@ -41,7 +41,7 @@ function App() {
       <h2>Vite + React</h2>
 
       <Suspense fallback={<h4>Posts are loading.....</h4>}>
-        <Posts fetchPosts = {fetchPosts}></Posts>
+        <Posts postsPromise = {postsPromise}></Posts>
       </Suspense>
 
       {/* <Suspense fallback = {<h3>Loading...</h3>}>
